@@ -13,4 +13,4 @@
 
 - [x] 3.1 Escrever `README.md` sucinto (requisitos, `.env`, ngrok, register, burst, acompanhamento, testes); verificar seguindo os comandos do README com o servidor local
 - [x] 3.2 Escrever `docs/DECISIONS.md` (arquitetura, decisões, trade-offs, 20.000 SKUs); verificar que cobre as três perguntas da entrega
-- [ ] 3.3 Preencher `docs/report.md` com o relatório da melhor execução real (roteiro já escrito); depende de rodar contra a plataforma real com ngrok
+- [x] 3.3 Preencher `docs/report.md` com o relatório da melhor execução real; verificado com 10 lotes contra a plataforma real (melhor: score 100)

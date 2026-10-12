@@ -71,7 +71,7 @@ O trabalho é feito em changes do OpenSpec (artefatos em pt-BR), implementadas n
 3. `add-process-ingestion`: `/process`, descarte de duplicatas, ACK rápido, `GET /admin/runs/:runId` (✅ implementada).
 4. `add-enrichment-worker`: limite de 3 chamadas com pausa global no 429, retries com backoff, cache por run+SKU, itens `done`/`failed` (✅ implementada).
 5. `add-run-consolidation-callback`: fim do run, timeout de inatividade, `/callback` com retry, reenvio manual (✅ implementada).
-6. `add-docs-and-report`: `src/service.ts`, testes de integração com plataforma fake (`test/integration/`), README, `docs/DECISIONS.md` (✅ implementada; falta só preencher `docs/report.md` com uma execução real).
+6. `add-docs-and-report`: `src/service.ts`, testes de integração com plataforma fake (`test/integration/`), README, `docs/DECISIONS.md` (✅ implementada). `docs/report.md` traz a melhor execução real (score 100) e o resumo de 10 lotes; os ACKs lentos esporádicos vieram do túnel, não do servidor.
 
 Cada change ganha especificação, design e tarefas completos só quando chega a vez dela. Use `/opsx:propose`, `/opsx:apply` e `/opsx:archive`.
 
