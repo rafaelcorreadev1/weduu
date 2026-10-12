@@ -1,0 +1,30 @@
+{
+  "name": "weduu-sku-enrichment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "start": "node --env-file-if-exists=.env dist/server.js",
+    "dev": "node --env-file-if-exists=.env --watch src/server.ts",
+    "register": "node --env-file-if-exists=.env scripts/register.ts",
+    "burst": "node --env-file-if-exists=.env scripts/burst.ts",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pino": "^10.4.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.1",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1",
+    "typescript": "^7.0.2"
+  }
+}
